@@ -1,0 +1,36 @@
+{
+  "name": "your-vendor/jpesa-php-sdk",
+  "description": "PHP SDK for JPesa API (Credit/Debit GWallet, Transaction lookup, KYC) with optional Laravel integration.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5 || ^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JPesa\\SDK\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JPesa\\SDK\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JPesa\\SDK\\Laravel\\JPesaServiceProvider"
+      ],
+      "aliases": {
+        "JPesa": "JPesa\\SDK\\Laravel\\Facades\\JPesa"
+      }
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
