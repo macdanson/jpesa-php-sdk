@@ -8,7 +8,7 @@ A lightweight, Composer-ready PHP SDK for the **JPesa API**: Credit/Debit GWalle
 ## Installation
 
 ```bash
-composer require your-vendor/jpesa-php-sdk
+composer require macdanson/jpesa-php-sdk
 ```
 
 ## Quick start (vanilla PHP)

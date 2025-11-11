@@ -1,5 +1,5 @@
 {
-  "name": "your-vendor/jpesa-php-sdk",
+  "name": "macdanson/jpesa-php-sdk",
   "description": "PHP SDK for JPesa API (Credit/Debit GWallet, Transaction lookup, KYC) with optional Laravel integration.",
   "type": "library",
   "license": "MIT",
